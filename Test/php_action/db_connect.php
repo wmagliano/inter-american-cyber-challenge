@@ -1,0 +1,18 @@
+<?php 	
+
+$localhost = "localhost";
+$username = "root";
+$password = "Take_care_with_pass_and_apis";
+$dbname = "store"; 
+// Change this password, as this is the default for our systems
+$store_url = "http://localhost/php-inventory-management-system/";
+// db connection
+$connect = new mysqli($localhost, $username, $password, $dbname);
+// check connection
+if($connect->connect_error) {
+  die("Connection Failed : " . $connect->connect_error);
+} else {
+  // echo "Successfully connected";
+}
+
+?>
